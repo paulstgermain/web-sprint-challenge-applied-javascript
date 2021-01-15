@@ -18,8 +18,6 @@ const Tabs = (topics) => {
   let tabs = document.createElement('div');
   tabs.classList.add('topics');
 
-  console.log(topics);
-
   topics.forEach(topic => {
     let tab = document.createElement('div');
     tab.classList.add('tab');
@@ -27,9 +25,7 @@ const Tabs = (topics) => {
     tabs.append(tab);
   })
 
-console.log(tabs);
   return tabs;
-
 }
 
 const tabsAppender = (selector) => {
