@@ -21,7 +21,7 @@ const Tabs = (topics) => {
   topics.forEach(topic => {
     let tab = document.createElement('div');
     tab.classList.add('tab');
-    tab.innerText = topic;
+    tab.textContent = topic;
     tabs.append(tab);
   })
 

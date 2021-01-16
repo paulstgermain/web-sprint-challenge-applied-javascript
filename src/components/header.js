@@ -21,9 +21,9 @@ const Header = (title, date, temp) => {
   dateSpan.classList.add('date');
   tempSpan.classList.add('temp');
 
-  dateSpan.innerText = date;
-  headerTitle.innerText = title;
-  tempSpan.innerText = temp;
+  dateSpan.textContent = date;
+  headerTitle.textContent = title;
+  tempSpan.textContent = temp;
 
   header.append(dateSpan);
   header.append(headerTitle);
@@ -41,7 +41,7 @@ const headerAppender = (selector) => {
   // It should append the header to the element in the DOM that matches the given selector.
   //
   let target = document.querySelector(selector);
-  target.append(Header('The Lambda Times', '1/15/17', '38F' ));
+  target.append(Header('The Lambda Times', 'January 6, 2021', '26°' ));
 }
 
 export { Header, headerAppender }
